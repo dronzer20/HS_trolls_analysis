@@ -1,9 +1,11 @@
 SELECT
   m.authorChannelId as troll_channel_id,
+  m.author as troll_name,
   m.comment_id,
   t.number_channels_trolled as victim_channels,
   t.total_number_toxic_comments as total_toxic_comments_by_troll,
   m.video_id,
+  m.channel_id as victim_channel_id,
   m.comment_date,
   case when m.comment_hour_of_the_day in (20,21,22,23,0,1,2,3,4,5)
   then 1 else 0 end as is_toxic_comment_at_night,
@@ -25,10 +27,12 @@ USING
   (authorChannelId)
 group by
 troll_channel_id,
+troll_name,
 m.comment_id,
 victim_channels,
 total_toxic_comments_by_troll,
 m.video_id,
+victim_channel_id,
 m.comment_date,
 m.comment_hour_of_the_day,
 is_victim_a_girl,
