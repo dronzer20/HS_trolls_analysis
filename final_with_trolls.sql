@@ -7,7 +7,7 @@ SELECT
   m.video_id,
   m.channel_id as victim_channel_id,
   m.comment_date,
-  case when m.comment_hour_of_the_day in (20,21,22,23,0,1,2,3,4,5)
+  case when m.comment_hour_of_the_day in (18,19,20,21,22,23,0,1,2,3,4,5,6)
   then 1 else 0 end as is_toxic_comment_at_night,
   m.comment_hour_of_the_day,
   case when (m.gender <> "m") then 1 else 0 end as is_victim_a_girl,
@@ -18,6 +18,10 @@ SELECT
   case when (m.threat >0.9) then 1 else 0 end as is_threat,
   case when (m.insult >0.9) then 1 else 0 end as is_insult,
   case when (m.identity_hate >0.9) then 1 else 0 end as is_identity_hate,
+  m.v_duration_min,
+  m.view_count,
+  m.like_count,
+  m.dislike_count,
   m.text
 FROM
   `hatespeech-2019.HS_trolls_analysis.Comments_above_detoxify_threshold` m
@@ -43,6 +47,10 @@ is_obscene,
 is_threat,
 is_insult,
 is_identity_hate,
+m.v_duration_min,
+m.view_count,
+m.like_count,
+m.dislike_count,
 m.text
 order by
 comment_date desc,
