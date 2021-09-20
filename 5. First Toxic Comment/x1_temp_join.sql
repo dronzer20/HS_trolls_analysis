@@ -24,8 +24,8 @@ LEFT JOIN
   `hatespeech-2019.Final_Dataset.Channel_Videos_Comments_Victims_Merged` B
 USING
   (video_id)
-group by
-A.video_id,
-A.first_toxic_comment ,
-A.comment_date,
-video_posted;
+GROUP BY
+  A.video_id,
+  A.first_toxic_comment,
+  A.comment_date,
+  video_posted;
