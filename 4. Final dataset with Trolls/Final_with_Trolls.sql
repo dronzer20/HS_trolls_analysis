@@ -2,6 +2,7 @@ Select
 comment_id,
 author_channel_id,
 author_name,
+case when (victim_channels >=2) then 1 else 0 end as is_author_a_troll,
 case when (victim_channels is null) then 0 else victim_channels end as victim_channels,
 case when (toxic_comments_by_author is null) then 0 else toxic_comments_by_author end as toxic_comments_by_author,
 video_id,
@@ -24,3 +25,7 @@ like_count,
 dislike_count,
 text
 from `hatespeech-2019.HS_trolls_analysis.Temp_results` 
+order by
+video_id,
+comment_date,
+comment_hour_of_the_day 
