@@ -24,4 +24,4 @@ For each video affected by toxic comments, find the first toxic comment made and
 #
 
 ### 6. HS video details
-Create a table for affected videos which contains information about when the first toxic comment was made and the total hate comments made on the video after that. It contains this information across different categories of hate speech and about the days passed. 
+Create a table for affected videos which contains information about when the first toxic comment was made and the total hate comments made on the video after that. It contains this information across different categories of hate speech and the days passed. 
