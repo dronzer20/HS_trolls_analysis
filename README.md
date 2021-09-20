@@ -1,6 +1,7 @@
 # Hate Speech Virality Analysis
 
-1. Initial troll analysis. 
+1. Initial troll analysis
+
    Analyse toxic comments by using a rough threshold of 0.9 for each category of hate speech- toxic, severely toxic, obscene, threat, insult, identity_hate
 
 2. Decide thresholds. 
