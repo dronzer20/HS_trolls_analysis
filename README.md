@@ -25,3 +25,20 @@ For each video affected by toxic comments, find the first toxic comment made and
 
 ### 6. HS video details
 Create a table for affected videos which contains information about when the first toxic comment was made and the total hate comments made on the video after that. It contains this information across different categories of hate speech and the days passed. 
+#
+
+### 7. Prepare visualization
+Plot the virality of hate speech. Here we will see how the first hate comment leads to more hate comments across the different categories of toxicity, severe toxicity, obscene, threat, insult and identity hate.
+
+![toxic](https://user-images.githubusercontent.com/66757308/134305284-ec9fb162-728f-4d83-b551-859a6a0d1675.jpg)
+
+![sev_tox](https://user-images.githubusercontent.com/66757308/134305326-bcd19355-c600-419f-afa8-e8045364bdc1.jpg)
+
+![obscene](https://user-images.githubusercontent.com/66757308/134305364-3e3ec35f-8f3c-4d3a-b456-73ddb7e64590.jpg)
+
+![threat](https://user-images.githubusercontent.com/66757308/134305393-907b5f53-e1ca-42a1-a98f-3b280c1ec998.jpg)
+
+![insult](https://user-images.githubusercontent.com/66757308/134305440-e9a01a74-fc21-4015-b67d-ceb0a2ab9e6c.jpg)
+
+![IH](https://user-images.githubusercontent.com/66757308/134305481-45c6f4ca-cd5c-47c3-9efb-32559a0eb572.jpg)
+
